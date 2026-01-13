@@ -12,7 +12,7 @@ from typing import Any
 
 import requests
 
-from emailer import send_email
+from src.emailer import send_email
 
 SNAPSHOT_PATH = Path("data/chainlist_snapshot.json")
 CHAINLIST_URL = "https://chainlist.org/rpcs.json"
