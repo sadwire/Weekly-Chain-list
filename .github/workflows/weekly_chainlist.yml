@@ -35,7 +35,7 @@ jobs:
           SMTP_USER: ${{ secrets.SMTP_USER }}
           SMTP_PASS: ${{ secrets.SMTP_PASS }}
           EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
-          SEND_IF_ZERO: ${{ vars.SEND_IF_ZERO }}
+          SEND_IF_ZERO: ${{ secrets.SEND_IF_ZERO }}
         run: |
           python -m src.chainlist_diff
 
